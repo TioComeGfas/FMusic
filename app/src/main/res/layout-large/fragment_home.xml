@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- item #1 -->
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:expansion_headerIndicator="@id/headerIndicator"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_toggleOnClick="true">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Cabezera 1"/>
+
+        <!-- HEADER INDICATOR -->
+        <android.support.v7.widget.AppCompatImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/headerIndicator"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!-- CONTENT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/caratulaHide"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_image_caratula_null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/caratulaHide"
+                android:text="Hola mundo"/>
+
+        </RelativeLayout>
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+
+</LinearLayout>

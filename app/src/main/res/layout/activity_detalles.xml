@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.DetallesActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCaratula"
+        android:layout_width="match_parent"
+        android:layout_height="367dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/d_image_view_caratula"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_image_caratula_null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitStart"/>
+
+    <com.truizlop.fabreveallayout.FABRevealLayout
+        android:id="@+id/fab_reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageViewCaratula">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_media_play"
+            app:backgroundTint="@color/colorAccent" />
+
+        <!-- elementos sin fab -->
+        <RelativeLayout
+            android:id="@+id/main_view"
+            android:layout_width="match_parent"
+            android:layout_height="368dp">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40sp"
+                android:textColor="@color/color_negro"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_negro"
+                android:textSize="20sp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60sp"
+                android:layout_below="@+id/textTitle"/>
+
+        </RelativeLayout>
+
+        <!-- elementos con fab -->
+        <RelativeLayout
+            android:id="@+id/secondary_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <include layout="@layout/second_view_details_fragment"/>
+
+        </RelativeLayout>
+
+    </com.truizlop.fabreveallayout.FABRevealLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FMusic</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Fmusic</string>
+    <string name="nav_header_subtitle">by : Fredy Moncada</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sgteSong"> reproducir siguiente cancion</string>
+    <string name="action_prevSong"> reproducir cancion anterior</string>
+    <string name="action_pause"> pausar </string>
+
+    <string name="d_image_view_caratula">d_caratula</string>
+    <string name="d_image_view_home">d_home</string>
+    <string name="d_image_button_play_pause">d_play_pause</string>
+    <string name="d_image_button_next">d_next</string>
+    <string name="d_image_button_previous">d_previous</string>
+    <string name="d_image_button_shuffle">d_shuffle</string>
+    <string name="d_image_button_repeat">d_repeat</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="nav_item1">Inicio</string>
+    <string name="nav_item2">Canciones</string>
+    <string name="nav_item3">Artistas</string>
+    <string name="nav_item4">Carpetas</string>
+    <string name="nav_item5">Caratula</string>
+
+    <string name="title2_nav">Personalizar</string>
+
+
+    <string name="mensaje_bienvenida">Hola,bienvenido a FMusic... disfrutela</string>
+    <string name="m_home_cancionMasEscuchada"> La cancion mas escuchada: </string>
+
+
+    <!-- Mensajes para la bienvenida -->
+    <string name="mensaje_1"> Hola, bienvenido a mi aplicacion</string>
+    <string name="description_1"> espero que la disfutes tanto como yo al desarrollarla... Saludos </string>
+
+    <string name="option1">Option 1</string>
+    <string name="option2">Option 2</string>
+    <string name="option3">Option 3</string>
+    <string name="details">Details</string>
+</resources>

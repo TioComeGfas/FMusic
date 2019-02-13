@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.FloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/ic_media_shuffle"
+    android:tint="@color/color_blanco"
+    android:backgroundTint="@color/color_biblioteca">
+
+
+</android.support.design.widget.FloatingActionButton>

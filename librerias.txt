@@ -1,0 +1,9 @@
+https://github.com/ksoichiro/Android-ObservableScrollView
+https://github.com/afollestad/material-cab
+https://github.com/truizlop/FABRevealLayout
+https://github.com/amlcurran/ShowcaseView
+https://github.com/armcha/Space-Navigation-View
+https://github.com/Nightonke/WoWoViewPager
+https://github.com/Yalantis/FlipViewPager.Draco
+https://github.com/florent37/ExpansionPanel
+https://github.com/Ramotion/android-ui-animation-components-and-libraries
